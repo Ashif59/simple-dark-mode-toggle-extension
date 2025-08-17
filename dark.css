@@ -1,0 +1,13 @@
+/*
+  A simple inversion-based dark mode.
+  It's not perfect, but it's a quick and easy way to get dark mode on most sites.
+*/
+html {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #fefefe; /* Prevents flashing a white background */
+}
+
+/* Re-invert images, videos, and other media to display them normally */
+img, video, iframe, .no-invert {
+    filter: invert(1) hue-rotate(180deg);
+}
